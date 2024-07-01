@@ -10,7 +10,7 @@
 # Solution in O(n)
 
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
+    def is_anagram(self, s: str, t: str) -> bool:
         letters_1, letters_2 = {}, {}
         
         for char in s:
@@ -30,7 +30,7 @@ class Solution:
 # Solution in O(n)
 
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
+    def is_anagram(self, s: str, t: str) -> bool:
         if len(s) != len(t):
             return False
         letters_1, letters_2 = {}, {}
@@ -45,7 +45,7 @@ class Solution:
 # Solution in O(nlogn)
 
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
+    def is_anagram(self, s: str, t: str) -> bool:
         letters_1 = sorted([i for i in s])
         letters_2 = sorted([i for i in t])
 
@@ -57,7 +57,7 @@ class Solution:
 # Solution in O(n^2) 
 
 class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
+    def is_anagram(self, s: str, t: str) -> bool:
 
         letters_1 = {char: s.count(char) for char in s}
         letters_2 = {char: t.count(char) for char in t}
